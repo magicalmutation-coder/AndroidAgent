@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">AndroidAgent</string>
+    <string name="notification_listener_label">AndroidAgent Notifications</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_files">Files</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Chat -->
+    <string name="hint_message">Talk to ARIA…</string>
+    <string name="send">Send</string>
+
+    <!-- Settings -->
+    <string name="configure_llm">Configure LLM Server</string>
+    <string name="settings_title">Settings</string>
+
+    <!-- Files -->
+    <string name="empty_files">No files yet.\nTap + to create a new file.</string>
+
+    <!-- Errors -->
+    <string name="error_no_llm">No LLM configured. Go to Settings to set up your AI backend.</string>
+    <string name="error_connection">Connection failed. Check your LLM server.</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary robot blue -->
+    <color name="robot_blue">#2196F3</color>
+    <color name="robot_blue_dark">#1565C0</color>
+
+    <!-- Accent green -->
+    <color name="accent_green">#4CAF50</color>
+
+    <!-- Background -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_variant">#2C2C2C</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    <color name="text_on_accent">#FFFFFFFF</color>
+    <color name="text_on_accent_secondary">#CCFFFFFF</color>
+
+    <!-- Accent -->
+    <color name="accent">#2196F3</color>
+    <color name="accent_secondary">#64B5F6</color>
+
+    <!-- Chat bubbles -->
+    <color name="user_bubble">#1565C0</color>
+    <color name="agent_bubble">#2C2C2C</color>
+
+    <!-- Bottom nav -->
+    <color name="bottom_nav_selected">#2196F3</color>
+    <color name="bottom_nav_unselected">#78909C</color>
+
+    <!-- Material theme colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryVariant">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#4CAF50</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorError">#CF6679</color>
+    <color name="colorOnError">#000000</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorSurface">#1E1E1E</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+</resources>
