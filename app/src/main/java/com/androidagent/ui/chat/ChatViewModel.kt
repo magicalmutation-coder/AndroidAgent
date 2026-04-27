@@ -31,11 +31,22 @@ class ChatViewModel : ViewModel() {
     private val _error = MutableLiveData<String?>()
     val error: LiveData<String?> = _error
 
+    private var messagesLiveData: androidx.lifecycle.LiveData<List<Message>>? = null
+    private val messagesObserver = androidx.lifecycle.Observer<List<Message>> { msgs ->
+        _messages.postValue(msgs)
+    }
+
     fun loadConversation(conversationId: String = "default") {
         currentConversationId = conversationId
-        db.messageDao().getByConversation(conversationId).observeForever { msgs ->
-            _messages.postValue(msgs)
-        }
+        messagesLiveData?.removeObserver(messagesObserver)
+        val liveData = db.messageDao().getByConversation(conversationId)
+        messagesLiveData = liveData
+        liveData.observeForever(messagesObserver)
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        messagesLiveData?.removeObserver(messagesObserver)
     }
 
     fun sendMessage(text: String) {
