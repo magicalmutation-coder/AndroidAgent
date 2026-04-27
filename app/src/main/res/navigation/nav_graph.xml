@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.androidagent.ui.main.MainFragment"
+        android:label="@string/tab_home"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.androidagent.ui.chat.ChatFragment"
+        android:label="@string/tab_chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/filesFragment"
+        android:name="com.androidagent.ui.files.FilesFragment"
+        android:label="@string/tab_files"
+        tools:layout="@layout/fragment_files" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.androidagent.ui.settings.SettingsFragment"
+        android:label="@string/tab_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_llmConfigFragment"
+            app:destination="@id/llmConfigFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_contactsAutoReplyFragment"
+            app:destination="@id/contactsAutoReplyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/llmConfigFragment"
+        android:name="com.androidagent.ui.settings.LLMConfigFragment"
+        android:label="LLM Configuration"
+        tools:layout="@layout/fragment_llm_config" />
+
+    <fragment
+        android:id="@+id/contactsAutoReplyFragment"
+        android:name="com.androidagent.ui.settings.ContactsAutoReplyFragment"
+        android:label="Auto-Reply Contacts"
+        tools:layout="@layout/fragment_contacts_autoreply" />
+
+</navigation>

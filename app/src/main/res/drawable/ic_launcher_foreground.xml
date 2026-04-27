@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Robot face icon for launcher -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 C38.5,20 26,32.5 26,48 C26,58 31.5,66.8 39.8,71.8 L39.8,82 C39.8,84.2 41.6,86 43.8,86 L64.2,86 C66.4,86 68.2,84.2 68.2,82 L68.2,71.8 C76.5,66.8 82,58 82,48 C82,32.5 69.5,20 54,20 Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M44,44 C44,40.7 46.7,38 50,38 C53.3,38 56,40.7 56,44 C56,47.3 53.3,50 50,50 C46.7,50 44,47.3 44,44 Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M52,44 C52,40.7 54.7,38 58,38 C61.3,38 64,40.7 64,44 C64,47.3 61.3,50 58,50 C54.7,50 52,47.3 52,44 Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M44,56 Q54,64 64,56"
+        android:strokeColor="#2196F3"
+        android:strokeWidth="3" />
+    <!-- Antenna -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,16 L56,16 L56,22 L52,22 Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,10 C51.8,10 50,11.8 50,14 C50,16.2 51.8,18 54,18 C56.2,18 58,16.2 58,14 C58,11.8 56.2,10 54,10 Z" />
+</vector>

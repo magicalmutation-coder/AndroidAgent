@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="companion_face_size">200dp</dimen>
+    <dimen name="robot_card_size">120dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_body">15sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="bottom_nav_height">56dp</dimen>
+</resources>
