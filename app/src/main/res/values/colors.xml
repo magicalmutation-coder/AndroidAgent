@@ -16,7 +16,7 @@
     <color name="text_primary">#FFFFFFFF</color>
     <color name="text_secondary">#B3FFFFFF</color>
     <color name="text_on_accent">#FFFFFFFF</color>
-    <color name="text_on_accent_secondary">#CCffffff</color>
+    <color name="text_on_accent_secondary">#CCFFFFFF</color>
 
     <!-- Accent -->
     <color name="accent">#2196F3</color>

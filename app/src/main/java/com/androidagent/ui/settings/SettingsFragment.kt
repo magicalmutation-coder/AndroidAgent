@@ -6,12 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.androidagent.CompanionApplication
-import com.androidagent.R
 import com.androidagent.data.repository.MemoryRepository
 import com.androidagent.databinding.FragmentSettingsBinding
 import kotlinx.coroutines.launch
@@ -70,7 +67,7 @@ class SettingsFragment : Fragment() {
                 .setTitle("Clear All Memories")
                 .setMessage("Are you sure? This cannot be undone.")
                 .setPositiveButton("Clear") { _, _ ->
-                    kotlinx.coroutines.GlobalScope.launch {
+                    viewLifecycleOwner.lifecycleScope.launch {
                         memoryRepository.clearAllMemories()
                     }
                     Toast.makeText(context, "Memories cleared", Toast.LENGTH_SHORT).show()
